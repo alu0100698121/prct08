@@ -20,4 +20,12 @@ describe Matriz do
 		end
 	end
 	
+	describe " # Operadores unarios. " do
+      it " # Se debe poder transformar la matriz a una cadena de caracteres" do
+	    @m1[0] = [1,2]
+		@m1[1] = [3,4]
+        @m1.to_s.should == "1\t2\t\n3\t4\t\n"
+      end
+    end
+	
 end
