@@ -29,7 +29,7 @@ describe Matriz do
       end
 	  
 	  it " # Se debe poder negar una matriz con el operador -" do
-        -@m1.to_s.should = "-1\t-2\t\n-3\t-4\t\n"
+        (-@m1).to_s.should == "-1\t-2\t\n-3\t-4\t\n"
       end
     end
 	

@@ -23,6 +23,8 @@ class Matriz
 		@contenido[i] = other			
 	end
 	
+	# Operadores unarios
+	
 	def to_s
 	  s = ""
       i = 0
@@ -37,4 +39,18 @@ class Matriz
       end
 	  s
 	end
+	
+	def -@
+      i = 0
+	  c = Matriz.new(@N, @M)
+      while(i < @N)
+        j = 0
+        while(j < @M)
+	      c[i][j] = -contenido[i][j]
+	      j += 1
+    	  end
+	    i += 1
+      end
+      c
+    end
 end
