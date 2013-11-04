@@ -1,8 +1,20 @@
-20:47:57 - INFO - Running: spec/matrices_spec.rb
+20:50:15 - INFO - Running: spec/matrices_spec.rb
 DL is deprecated, please use Fiddle
 For a better pry experience, please use ansicon: http://adoxa.3eeweb.com/ansicon/
-.....
+.....F
 
-Finished in 0.006 seconds
-5 examples, 0 failures
-]2Spec results] 5 examples, 0 failures
+Failures:
+
+  1) Matriz  # Operadores unarios.   # Se debe poder negar una matriz con el operador -
+     Failure/Error: -@m1.to_s.should = "-1\t-2\t\n-3\t-4\t\n"
+     NoMethodError:
+       undefined method `should=' for "1\t2\t\n3\t4\t\n":String
+     # ./spec/matrices_spec.rb:32:in `block (3 levels) in <top (required)>'
+
+Finished in 0.005 seconds
+6 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/matrices_spec.rb:31 # Matriz  # Operadores unarios.   # Se debe poder negar una matriz con el operador -
+]2Spec results] 6 examples, 1 failures
