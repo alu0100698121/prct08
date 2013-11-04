@@ -53,4 +53,23 @@ class Matriz
       end
       c
     end
+	
+	# Operadores aritméticos
+	
+	def +(other)
+      raise ArgumentError , 'Tipo invalido' unless other.is_a? Matriz
+      raise ArgumentError , 'Matriz no compatible' unless @N == other.N and @M == other.M
+  
+      c = Matriz.new(@N, @M)
+      i = 0
+      while(i < @N)
+        j = 0
+        while(j < @M)
+	      c[i][j] = contenido[i][j] + other[i][j]
+    	  j += 1
+    	end
+    	i += 1
+      end
+      c
+    end
 end
