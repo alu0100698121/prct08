@@ -11,6 +11,9 @@ describe Matriz do
 		it " # Se debe almacenar el numero de columnas " do
 			@m1.M
 		end
+		it " # Se debe poder almacenar datos en forma vectorial en la matriz " do
+			@m1[0]=[1,2]
+		end
 	end
 	
 end
