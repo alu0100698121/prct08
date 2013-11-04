@@ -1,18 +1,6 @@
-13:34:25 - INFO - Running: spec/matrices_spec.rb
-C:/Users/Eliasib/Dropbox/3_Carrera/LPP/Practicas/prct08/spec/matrices_spec.rb:3:in `<top (required)>
-': uninitialized constant Matriz (NameError)
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/configuration.rb:8
-96:in `load'
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/configuration.rb:8
-96:in `block in load_spec_files'
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/configuration.rb:8
-96:in `each'
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/configuration.rb:8
-96:in `load_spec_files'
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/command_line.rb:22
-:in `run'
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/runner.rb:80:in `r
-un'
-        from C:/Ruby193/lib/ruby/gems/1.9.1/gems/rspec-core-2.14.7/lib/rspec/core/runner.rb:17:in `b
-lock in autorun'
-?]2;[RSpec results] Failed
+13:44:18 - INFO - Running: spec/matrices_spec.rb
+.
+
+Finished in 0.002 seconds
+1 example, 0 failures
+?]2;[RSpec results] 1 examples, 0 failures
