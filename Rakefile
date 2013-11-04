@@ -6,17 +6,17 @@ RSpec::Core::RakeTask.new
 
 task :default => :spec
 
-desc "Espectativas de la clase Fraccion" 
+desc "Espectativas de la clase Matriz" 
 task :test do
-	sh "rspec -I. spec/racional_spec.rb --format documentation"
+	sh "rspec -I. spec/matrices_spec.rb --format documentation"
 end
 
-desc "Espectativas de la clase Fraccion, con documentacion HTML"
+desc "Espectativas de la clase Matriz, con documentacion HTML"
 task :thtml do
-	sh "rspec -I. spec/racional_spec.rb --format html"
+	sh "rspec -I. spec/matrices_spec.rb --format html"
 end
 
 desc "Ejecutar el programa principal"
 task :bin do
-	sh "ruby -Ilib/ lib/racional.rb"
+	sh "ruby -Ilib/ lib/matrices.rb"
 end
