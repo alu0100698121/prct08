@@ -17,8 +17,8 @@ class Matriz
 	def []=(i,other)
 		if @contenido == nil
 			@contenido = [other]
-		elsif i < @N 
-			if other.size <= @M
+		elsif i < self.@N 
+			if other.size <= self.@M
 				@contenido[i] = other
 			end
 		end

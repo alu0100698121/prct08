@@ -1,20 +1,6 @@
-15:51:05 - INFO - Running: spec/matrices_spec.rb
-..F
+18:08:14 - INFO - Running: spec/matrices_spec.rb
+...
 
-Failures:
+Finished in 0.00089 seconds
+3 examples, 0 failures
 
-  1) Matriz  # Almacenamiento de matrices.   # Se debe poder almacenar datos en forma vectorial en l
-a matriz
-     Failure/Error: @m1[0]=[1,2]
-     NoMethodError:
-       undefined method `[]=' for #<Matriz:0x2d97ce0 @M=2, @N=2, @contenido=nil>
-     # ./spec/matrices_spec.rb:15:in `block (3 levels) in <top (required)>'
-
-Finished in 0.002 seconds
-3 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/matrices_spec.rb:14 # Matriz  # Almacenamiento de matrices.   # Se debe poder almacenar
- datos en forma vectorial en la matriz
-?]2;[RSpec results] 3 examples, 1 failures
