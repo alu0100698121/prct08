@@ -10,6 +10,10 @@ describe Matriz do
 		@m2[0] = [1,2]
 		@m2[1] = [3,4]
 		
+		@m3 = Matriz.new(2,3)
+		@m3[0] = [1,2,3]
+		@m3[1] = [4,5,6]
+		
 	end
 	describe " # Almacenamiento de matrices. " do
 		it " # Se debe almacenar el numero de filas " do
@@ -44,6 +48,11 @@ describe Matriz do
 	  
 	  it " # Se deben poder restar matrices" do
         (@m1 - @m2).to_s.should == "0\t0\t\n0\t0\t\n"
+      end
+	  
+	  it " # Se deben poder multiplicar matrices" do
+        (@m1 * @m3).to_s.should = "9\t12\t15\t\n19\t26\t33\t\n"
+		(@m1 * 2).to_s.should = "2\t4\t\n6\t8\t\n"
       end
 	  
     end
