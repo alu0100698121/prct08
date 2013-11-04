@@ -22,4 +22,19 @@ class Matriz
 		raise ArgumentError, 'Tam. fila no valido' unless other.size <= @M		
 		@contenido[i] = other			
 	end
+	
+	def to_s
+	  s = ""
+      i = 0
+      while(i < @N)
+        j = 0
+        while(j < @M)
+	      s += "#{contenido[i][j]}\t"
+	      j += 1
+	    end
+	    s += "\n"
+	    i += 1
+      end
+	  s
+	end
 end

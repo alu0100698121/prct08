@@ -1,26 +1,8 @@
-20:36:19 - INFO - Running: spec/matrices_spec.rb
+20:47:57 - INFO - Running: spec/matrices_spec.rb
 DL is deprecated, please use Fiddle
 For a better pry experience, please use ansicon: http://adoxa.3eeweb.com/ansicon/
-....F
+.....
 
-Failures:
-
-  1) Matriz  # Operadores unarios.   # Se debe poder transformar la matriz a una cadena de caracteres
-     Failure/Error: @m1.to_s.should == "1\t2\t\n3\t4\t\n"
-       expected: "1\t2\t\n3\t4\t\n"
-            got: "#<Matriz:0x3067b00>" (using ==)
-       Diff:
-       @@ -1,3 +1,2 @@
-       -1       2
-       -3       4
-       +#<Matriz:0x3067b00>
-     # ./spec/matrices_spec.rb:27:in `block (3 levels) in <top (required)>'
-
-Finished in 0.007 seconds
-5 examples, 1 failure
-
-Failed examples:
-
-rspec ./spec/matrices_spec.rb:24 # Matriz  # Operadores unarios.   # Se debe poder transformar la matriz a una cadena de caractere
-s
-]2Spec results] 5 examples, 1 failures
+Finished in 0.006 seconds
+5 examples, 0 failures
+]2Spec results] 5 examples, 0 failures
