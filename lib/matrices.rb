@@ -89,4 +89,40 @@ class Matriz
       end
       c
     end
+	
+  def *(other)
+    raise ArgumentError , 'Parametro invalido' unless other.is_a? Numeric or other.is_a? Matriz
+
+    if(other.is_a? Numeric) # Matriz * numero
+      c = Matriz.new(@N, @M)
+	  i = 0
+      while(i < @N)
+        j = 0
+        while(j < @M)
+         c[i][j] = contenido[i][j]*other
+         j += 1
+	    end # while j
+	    i += 1
+      end # while i
+    else # Matriz * Matriz
+      raise ArgumentError , 'Matriz no compatible (A.N == B.M)' unless @M == other.N
+      c = Matriz.new(@N, other.M)
+      i = 0
+      while(i < @N)
+        j = 0
+        while(j < other.M)
+	      k = 0
+	      c[i][j] = 0
+	      while(k < @M)
+	        c[i][j] =  c[i][j] + contenido[i][k] * other[k][j]
+	        k += 1
+	      end # while k
+          j += 1
+        end # while j
+	    i += 1
+      end # while i
+    end # while else
+  
+    c
+  end
 end
