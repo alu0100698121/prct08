@@ -1,8 +1,20 @@
-20:56:06 - INFO - Running: spec/matrices_spec.rb
+20:58:32 - INFO - Running: spec/matrices_spec.rb
 DL is deprecated, please use Fiddle
 For a better pry experience, please use ansicon: http://adoxa.3eeweb.com/ansicon/
-......
+......F
 
-Finished in 0.01 seconds
-6 examples, 0 failures
-]2Spec results] 6 examples, 0 failures
+Failures:
+
+  1) Matriz  # Operadores aritmeticos.   # Se deben poder sumar matrices
+     Failure/Error: (@m1 + @m2).to_s.should = "2\t4\t\n6\t8\t\n"
+     NoMethodError:
+       undefined method `+' for #<Matriz:0x328f0c8 @M=2, @N=2, @contenido=[[1, 2], [3, 4]]>
+     # ./spec/matrices_spec.rb:42:in `block (3 levels) in <top (required)>'
+
+Finished in 0.008 seconds
+7 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/matrices_spec.rb:41 # Matriz  # Operadores aritmeticos.   # Se deben poder sumar matrices
+]2Spec results] 7 examples, 1 failures
