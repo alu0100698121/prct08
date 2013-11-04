@@ -1,8 +1,8 @@
-21:23:45 - INFO - Running: spec/matrices_spec.rb
+21:28:06 - INFO - Running: spec/matrices_spec.rb
 DL is deprecated, please use Fiddle
 For a better pry experience, please use ansicon: http://adoxa.3eeweb.com/ansicon/
-.........
+..........
 
-Finished in 0.007 seconds
-9 examples, 0 failures
-]2Spec results] 9 examples, 0 failures
+Finished in 0.009 seconds
+10 examples, 0 failures
+]2Spec results] 10 examples, 0 failures

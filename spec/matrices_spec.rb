@@ -29,6 +29,11 @@ describe Matriz do
 			@m1[1] = [3,4]
 			@m1[1][0].should eq(3)
 		end
+		it " # Se deben poder almacenar todo tipo de datos numericos (flotantes, enteros, etc...) " do		
+			@m1[0] = [3.0,4.5]
+			@m1[1] = [1.1,4.0]
+			@m1.to_s.should == "3.0\t4.5\t\n1.1\t4.0\t\n"
+		end
 	end
 	
 	describe " # Operadores unarios. " do
