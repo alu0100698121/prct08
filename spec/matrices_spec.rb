@@ -12,10 +12,11 @@ describe Matriz do
 			@m1.M
 		end
 		it " # Se debe poder almacenar datos en forma vectorial en la matriz " do
-			@m1[0]=[1,2]
+			@m1[0] = [1,2]
 		end
-		it " # Se debe poder acceder a los datos almacenados en la matriz " do
-			@m1[0].should == (puts [1,2])
+		it " # Se debe poder acceder a los datos almacenados en la matriz " do		
+			@m1[1] = [3,4]
+			@m1[1][0].should eq(3)
 		end
 	end
 	
