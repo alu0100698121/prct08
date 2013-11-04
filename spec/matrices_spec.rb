@@ -43,7 +43,7 @@ describe Matriz do
 	  end
 	  
 	  it " # Se deben poder restar matrices" do
-        (@m1 - @m2).to_s.should = "0\t0\t\n0\t0\t\n"
+        (@m1 - @m2).to_s.should == "0\t0\t\n0\t0\t\n"
       end
 	  
     end
