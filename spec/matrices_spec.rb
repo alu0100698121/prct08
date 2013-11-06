@@ -13,6 +13,17 @@ describe Matriz do
 		@m3 = Matriz.new(2,3)
 		@m3[0] = [1,2,3]
 		@m3[1] = [4,5,6]
+
+		@f1 = Fraccion.new(1,5)
+		@f2 = Fraccion.new(2,5)
+
+		@m4 = Matriz.new(2,2)
+		@m4[0] = [@f1,@f1]
+		@m4[1] = [@f1,@f1]
+
+		@m5 = Matriz.new(2,2)
+		@m5[0] = [@f2,@f2]
+		@m5[1] = [@f2,@f2]
 		
 	end
 	describe " # Almacenamiento de matrices. " do
@@ -37,29 +48,31 @@ describe Matriz do
 	end
 	
 	describe " # Operadores unarios. " do
-      it " # Se debe poder transformar la matriz a una cadena de caracteres" do
-        @m1.to_s.should == "1\t2\t\n3\t4\t\n"
-      end
+      		it " # Se debe poder transformar la matriz a una cadena de caracteres" do
+        		@m1.to_s.should == "1\t2\t\n3\t4\t\n"
+      		end
 	  
-	  it " # Se debe poder negar una matriz con el operador -" do
-        (-@m1).to_s.should == "-1\t-2\t\n-3\t-4\t\n"
-      end
-    end
+	  	it " # Se debe poder negar una matriz con el operador -" do
+        		(-@m1).to_s.should == "-1\t-2\t\n-3\t-4\t\n"
+      		end
+    	end
 	
 	describe " # Operadores aritmeticos. " do
-      it " # Se deben poder sumar matrices" do
-        (@m1 + @m2).to_s.should == "2\t4\t\n6\t8\t\n"
-	  end
+      		it " # Se deben poder sumar matrices" do
+        		(@m1 + @m2).to_s.should == "2\t4\t\n6\t8\t\n"
+			(@m4 + @m5).to_s.should == "3/5\t3/5\t\n3/5\t3/5\t\n"
+	  	end
 	  
-	  it " # Se deben poder restar matrices" do
-        (@m1 - @m2).to_s.should == "0\t0\t\n0\t0\t\n"
-      end
+	  	it " # Se deben poder restar matrices" do
+		        (@m1 - @m2).to_s.should == "0\t0\t\n0\t0\t\n"
+		end
 	  
-	  it " # Se deben poder multiplicar matrices" do
-        (@m1 * @m3).to_s.should == "9\t12\t15\t\n19\t26\t33\t\n"
-		(@m1 * 2).to_s.should == "2\t4\t\n6\t8\t\n"
-      end
+	 	it " # Se deben poder multiplicar matrices" do
+        		(@m1 * @m3).to_s.should == "9\t12\t15\t\n19\t26\t33\t\n"
+			(@m1 * 2).to_s.should == "2\t4\t\n6\t8\t\n"
+			(@m4 * @m5).to_s.should == "4/25\t4/25\t\n4/25\t4/25\t\n"
+      		end
 	  
-    end
+    	end
 	
 end
